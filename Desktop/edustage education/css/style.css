@@ -1,0 +1,546 @@
+.container {
+  max-width: 80vw;
+  margin: auto;
+}
+:root {
+  --blue: #002347;
+  --yellow: #fdc632;
+  --gray: #7b838a;
+}
+body {
+  font-family: Roboto;
+}
+header {
+  background: url("../img/background.webp") 55% / cover;
+  height: 100vh;
+  text-align: center;
+}
+
+.navbar ul li a {
+  font: 500 .9em Rubik;
+  line-height: 2;
+  transition:all 0.5s;
+  position: relative;
+}
+.navbar ul li a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  background-color: var(--yellow);
+  height: 2px;
+  transition: all 0.5s;
+}
+.navbar ul li a:hover {
+  color: var(--yellow);
+}
+.navbar ul li a:hover::after {
+  width: 100%;
+  background-color: var(--yellow);
+}
+.header-content {
+  padding-top: 150px;
+}
+header h5 {
+  font: 500 1.2em Roboto;
+}
+header h1 {
+  font: 500 2em Roboto;
+  padding: 20px 0 30px;
+}
+.header-btns a {
+  padding: 15px 45px;
+  border-radius: 4px;
+  font: 500 13px Roboto;
+  width: 200px;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.btn1:hover {
+  color: var(--blue);
+  background-color: var(--yellow);
+}
+.btn2:hover {
+  color: var(--yellow);
+  background-color: var(--blue);
+}
+
+main h2 {
+  font: 700 2em Rubik;
+  padding: 35px 0 10px;
+}
+main p {
+  font: italic 1em Roboto;
+}
+
+.box1 {
+  padding: 40px 36px;
+  margin: 25px 10px;
+}
+.box1:hover,
+.person1:hover,
+.person2:hover,
+.person3:hover,
+.person4:hover,
+.client1:hover {
+  box-shadow: 0px 10px 30px rgba(0, 35, 71, 0.1);
+}
+.awesome-boxes i {
+  font-size: 2em;
+}
+.awesome-boxes p,
+.card p,
+#register p,
+.part2 p,
+.people p,
+.events-details p {
+  font-style: normal;
+  line-height: 1.5;
+}
+.awesome-boxes h4,
+.card h4 {
+  font: 500 1.25em Rubik;
+  padding: 15px 0 10px;
+}
+
+.cards {
+  padding: 50px 0;
+}
+
+.card-content {
+  padding: 20px;
+}
+.card-content a {
+  color: #fff;
+  font: 0.8em Roboto;
+  padding: 5px 15px;
+}
+.card,
+.card img {
+  width: 85vw;
+}
+.card {
+  position: relative;
+}
+.round {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 100px;
+  right: 10px;
+}
+.round span {
+  font: 500 1.3em Rubik;
+}
+
+.card:hover .round {
+  background-color: var(--yellow);
+}
+.card:hover span {
+  color: var(--blue);
+}
+.card:hover h4 {
+  color: var(--yellow);
+}
+
+.part1 h2,
+.part1 p {
+  color: #fff;
+}
+
+.time {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 30px;
+}
+.time-box h4 {
+  font: 500 2em Rubik;
+  padding-bottom: 10px;
+}
+.time-box span {
+  font-family: Roboto;
+}
+.time-box {
+  padding: 12px 30px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 5px;
+  background-color: #334f6c;
+  margin: 7px;
+}
+.part2 {
+  background-color: #fff;
+  padding: 40px;
+  margin: 50px 0;
+}
+.part2 h5 {
+  font: 500 1.5em Rubik;
+}
+
+.part2 input {
+  width: 80vw;
+  outline: none;
+  border: 0;
+  border-bottom: 1px solid #eee;
+  padding: 12px;
+  margin: 10px 0;
+}
+.part2 input::placeholder {
+  font: 700 1em Roboto;
+}
+.part2 a {
+  font: 500 0.9em Roboto;
+  width: 80vw;
+  display: inline-block;
+  padding: 10px 30px;
+  margin-top: 35px;
+}
+#register .container {
+  overflow: hidden;
+}
+
+.people {
+  padding: 70px 0;
+}
+.people h5 {
+  font: 500 1.25em Rubik;
+  padding: 15px 0 5px;
+}
+.people span {
+  font-size: 0.9em;
+}
+.people p {
+  margin: 20px;
+}
+.people i {
+  margin: 0 5px;
+  transition: 0.5s;
+  margin-bottom: 10px;
+  color: #ccc;
+}
+.people i:hover {
+  color: var(--yellow);
+}
+.person1-text {
+  margin: auto;
+}
+
+#events .container {
+  overflow: hidden;
+}
+#events img {
+  width: 510px;
+}
+.date h3 {
+  font: 500 1.75em Rubik;
+}
+.details {
+  display: flex;
+}
+.details hr {
+  height: 50px;
+  border: none;
+  border-right: 2px solid #fff;
+  margin-top: -50px;
+  margin-right: -10px;
+}
+.clock {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 2px;
+  margin-left: 20px;
+  font-size: 0.9em;
+}
+.events-details {
+  background-color: rgba(0, 35, 71, 0.5);
+  width: 250px;
+  padding: 20px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+#events .position {
+  position: relative;
+  max-width: 510px;
+  margin: 40px auto auto auto;
+}
+.events-details p {
+  padding: 10px 0 20px;
+}
+.events-details a {
+  font-size: 0.8em;
+  padding: 15px 30px;
+}
+.events-bottom {
+  padding: 50px 0 75px;
+}
+.client1 {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  margin-top: 50px;
+}
+.client1 h5 {
+  padding: 20px 0;
+}
+.clients-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+footer input {
+  outline: none;
+  padding: 10px 70px 10px 20px;
+  background-color: #334f6c;
+  border: none;
+}
+footer a {
+  font: 400 12px Rubik;
+  padding: 8px 20px;
+  margin-left: -60px;
+}
+footer {
+  line-height: 2;
+}
+footer .container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.foot-ul {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.text-center {
+  text-align: center;
+}
+.color-blue {
+  color: var(--blue);
+}
+.color-yellow {
+  color: var(--yellow);
+}
+.color-gray {
+  color: var(--gray);
+}
+.color-white {
+  color: #fff;
+}
+.bg-color-blue {
+  background-color: var(--blue);
+}
+.bg-color-yellow {
+  background-color: var(--yellow);
+}
+.bg-color-gray {
+  background: #f9f9ff;
+}
+.text-upper {
+  text-transform: uppercase;
+}
+
+@media only screen and (min-width: 786px) {
+  .container {
+    max-width: 80vw;
+    margin: auto;
+  }
+  nav,
+  .navbar ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  nav {
+    padding: 20px;
+  }
+  .navbar ul {
+    width: 30vw;
+  }
+  header h1 {
+    font-size: 3em;
+  }
+  .header-btns a {
+    display: initial;
+  }
+  main h2 {
+    font-size: 2.8em;
+  }
+  .awesome-boxes {
+    display: flex;
+    justify-content: space-between;
+  }
+  .awesome-boxes i {
+    font-size: 3em;
+  }
+  .card,
+  .card img {
+    width: 25vw;
+  }
+  .cards {
+    display: flex;
+    justify-content: space-between;
+  }
+  .round {
+    width: 50px;
+    height: 50px;
+    bottom: 130px;
+  }
+  .round span {
+    font-size: 1em;
+  }
+  .parts {
+    display: flex;
+    justify-content: space-between;
+  }
+  .part2 a,
+  .part2 input {
+    width: 24vw;
+  }
+  .part2 {
+    width: 400px;
+    margin: 40px 0;
+  }
+  .part1 {
+    width: 45vw;
+  }
+  .time-box {
+    padding: 20px 50px;
+  }
+  .people {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 15px;
+  }
+  .person1-text {
+    width: 17vw;
+  }
+  .positions {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  #events img {
+    max-width: 510px;
+  }
+  footer .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 50px;
+  }
+  .foot-ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+@media only screen and (max-width: 866px) and (min-width: 786px) {
+  .round {
+    bottom: 200px;
+  }
+}
+@media only screen and (max-width: 1169px) and (min-width: 869px) {
+  .round {
+    bottom: 155px;
+  }
+}
+@media only screen and (max-width: 618px) {
+  .round {
+    bottom: 120px;
+  }
+}
+@media only screen and (max-width: 344px) {
+  .round {
+    bottom: 150px;
+    width: 50px;
+    height: 50px;
+  }
+  .round span {
+    font-size: 1em;
+  }
+}
+@media only screen and (max-width: 597px) and (min-width: 453px) {
+  .secs {
+    width: 100vw;
+  }
+}
+@media only screen and (max-width: 312px) and (min-width: 290px) {
+  .secs,
+  .days {
+    width: 100vw;
+  }
+}
+@media only screen and (max-width: 290px) {
+  .days,
+  .hours {
+    width: 100vw;
+  }
+}
+@media only screen and (max-width: 284px) {
+  .time-box {
+    width: 100vw;
+  }
+}
+@media only screen and (max-width: 1418px) and (min-width: 1073px) {
+  .secs {
+    width: 100vw;
+  }
+}
+@media only screen and (max-width: 1063px) {
+  .parts {
+    flex-direction: column;
+  }
+  .part2 input {
+    width: 60vw;
+  }
+  .part2 a {
+    width: 60vw;
+  }
+  .part1 {
+    width: 80vw;
+  }
+  .part2 {
+    width: 80vw;
+  }
+}
+@media only screen and (max-width: 1075px) and (min-width: 975px) {
+  #events img {
+    width: 380px;
+  }
+  .positions {
+    flex-wrap: wrap;
+  }
+}
+@media only screen and (min-width: 1186px) {
+  .clients-cards {
+    flex-direction: row;
+  }
+}
+@media only screen and (max-width: 591px) {
+  .client1 {
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 378px) {
+  footer input {
+    padding-right: 30px;
+  }
+}
+@media only screen and (max-width: 328px) {
+  footer input {
+    padding-right: 20px;
+  }
+  footer a {
+    margin: auto;
+  }
+}
