@@ -17,9 +17,9 @@ header {
 }
 
 .navbar ul li a {
-  font: 500 .9em Rubik;
+  font: 500 0.9em Rubik;
   line-height: 2;
-  transition:all 0.5s;
+  transition: all 0.5s;
   position: relative;
 }
 .navbar ul li a::after {
@@ -318,7 +318,6 @@ footer .container {
   flex-direction: column;
   gap: 25px;
 }
-
 .text-center {
   text-align: center;
 }
