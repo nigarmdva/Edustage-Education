@@ -16,13 +16,15 @@ header {
   text-align: center;
 }
 
-.navbar ul li a {
+.navbar ul li a,
+.sidebar ul li a {
   font: 500 0.9em Rubik;
   line-height: 2;
   transition: all 0.5s;
   position: relative;
 }
-.navbar ul li a::after {
+.navbar ul li a::after,
+.sidebar ul li a:after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -32,10 +34,12 @@ header {
   height: 2px;
   transition: all 0.5s;
 }
-.navbar ul li a:hover {
+.navbar ul li a:hover,
+.sidebar ul li a:hover {
   color: var(--yellow);
 }
-.navbar ul li a:hover::after {
+.navbar ul li a:hover::after,
+.sidebar ul li a:hover::after {
   width: 100%;
   background-color: var(--yellow);
 }
@@ -345,8 +349,47 @@ footer .container {
 .text-upper {
   text-transform: uppercase;
 }
-
+.navbar {
+  display: none;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+.fa-bars {
+  font-size: 1.4em;
+  color: var(--blue);
+  cursor: pointer;
+}
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 240px;
+  background-color: rgba(29, 29, 29, 0);
+  z-index: 999;
+  transition: 0.5s;
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(30px);
+  display: none;
+  justify-content: center;
+}
+.sidebar ul {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
 @media only screen and (min-width: 786px) {
+  .navbar {
+    display: initial;
+  }
+  .fa-bars {
+    display: none;
+  }
   .container {
     max-width: 80vw;
     margin: auto;
